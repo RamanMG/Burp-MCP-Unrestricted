@@ -1,0 +1,50 @@
+.gradle
+build/
+.kotlin/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Fork: local-only, never publish ###
+_UPLOAD_GUIDE.md
+
+# Prebuilt jar lives in release/, NOT dist/, because the NetBeans block above
+# already ignores /dist/ and would silently drop it from the commit.
+#
+# release/ is ~30MB and is committed on purpose so users can install without a
+# toolchain. To ship it as a GitHub Release attachment instead, uncomment:
+# release/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store

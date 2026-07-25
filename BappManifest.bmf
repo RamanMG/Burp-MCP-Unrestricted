@@ -1,0 +1,13 @@
+Uuid: be324e410fdb4c9e8adc830e2ce36089
+ExtensionType: 1
+Name: MCP Server (Unrestricted fork)
+RepoName: burp-mcp-unrestricted
+ScreenVersion: 1.3.0-unrestricted
+SerialVersion: 10
+MinPlatformVersion: 26
+ProOnly: False
+Author: Daniel S, PortSwigger & Daniel Allen, PortSwigger. Fork tweaks by Raman_MG
+ShortDescription: Unofficial fork of PortSwigger's MCP Server. Adds site map, newest-first proxy history, scan/crawl and Repeater automation tools, and ships with the approval prompts off by default.
+EntryPoint: burp-mcp-all.jar
+BuildCommand: ./gradlew embedProxyJar
+SupportedProducts: Pro, Community
